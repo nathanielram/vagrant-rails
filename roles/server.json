@@ -1,0 +1,29 @@
+{
+  "name": "server",
+
+  "description": "A server of some kind...",
+  
+  "default_attributes": {
+    "apt" : {
+      "unattended_upgrades" : {
+        "enable" : true,
+        "allowed_origins" : [
+          "${distro_id} stable",
+          "${distro_id} ${distro_codename}-security"
+        ],
+        "automatic_reboot" : true
+      }
+    }
+  },
+
+  "json_class": "Chef::Role",
+
+  "run_list": [
+    // required for building from source
+    "recipe[build-essential]",
+    // enable unattended upgrades
+    "recipe[apt::unattended-upgrades]"
+  ],
+  "chef_type": "role",
+  "override_attributes": {}
+}
