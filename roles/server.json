@@ -1,7 +1,7 @@
 {
   "name": "server",
 
-  "description": "A server of some kind...",
+  "description": "A server",
   
   "default_attributes": {
     "apt" : {
@@ -13,17 +13,31 @@
         ],
         "automatic_reboot" : true
       }
+    },
+    "rbenv":{
+      "rubies": ["2.1.5"],
+      "global" : "2.1.5",
+      "gems": {
+        "2.1.5" : [
+          {"name":"bundler"}
+        ]
+      }
     }
   },
 
+
   "json_class": "Chef::Role",
 
+
   "run_list": [
-    // required for building from source
-    "recipe[build-essential]",
-    // enable unattended upgrades
-    "recipe[apt::unattended-upgrades]"
+    "recipe[apt::unattended-upgrades]",
+    "ruby_build",
+    "rbenv::system"
   ],
+
+
   "chef_type": "role",
+
+  
   "override_attributes": {}
 }

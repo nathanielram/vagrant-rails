@@ -1,9 +1,11 @@
 DEPENDENCIES
+  apt
   rbenv
     git: git://github.com/drogus/chef-rbenv.git
     revision: 02395a99b9f697b57a575609723c3c05f0e5a258
 
 GRAPH
+  apt (2.6.1)
   java (1.29.0)
   rbenv (0.7.3)
     java (> 1.4.0)
