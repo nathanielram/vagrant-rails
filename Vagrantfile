@@ -30,7 +30,29 @@ Vagrant.configure(2) do |config|
               {"name" => "bundler"}
             ]
           }
+        },
+        :postgresql => {
+          :users => [
+            {
+              :username => "vagrant",
+              :password => "vagrant",
+              :superuser => true,
+              :replication => false,
+              :createdb => true,
+              :createrole => false,
+              :inherit => true,
+              :login => true
+            }
+          ],
+          :databases => [
+            {
+              :name => "vagrant",
+              :owner => "vagrant",
+              :encoding => "UTF-8",
+              :locale => "en_US.UTF-8",
+            }
+          ]
         }
       }
-  end     
+  end    
 end

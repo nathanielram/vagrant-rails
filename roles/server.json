@@ -31,6 +31,9 @@
 
   "run_list": [
     "recipe[apt::unattended-upgrades]",
+    "recipe[postgresql::server]",
+    "recipe[postgresql::libpq]",
+    "rails_gem_dependencies-tlq",
     "ruby_build",
     "rbenv::system"
   ],
