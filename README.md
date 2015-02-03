@@ -1,6 +1,12 @@
 # vagrant-rails
 ## Working with Rails in Vagrant
 
+###Prerequisites
+- Vagrant (with vagrant-berkshelf installed -- ```vagrant plugin install vagrant-berkshelf```) 
+- Virtualbox or some other Vagrant-supported VM software
+
+###Install
+
 This will install rbenv/ruby 2.1.5 and rails. Anything beyond that is up to your imagination.
 
 To run this:
