@@ -2,8 +2,14 @@
 ## Working with Rails in Vagrant
 
 ###Prerequisites
-- Vagrant (with vagrant-berkshelf installed -- ```vagrant plugin install vagrant-berkshelf```) 
 - Virtualbox or some other Vagrant-supported VM software
+- Vagrant 
+
+Vagrant will need the berkshelf & omnibus plugins installed
+
+```vagrant plugin install vagrant-omnibus```  
+
+```vagrant plugin install vagrant-berkshelf```
 
 ###Install
 
