@@ -7,8 +7,8 @@ DEPENDENCIES
     git: git://github.com/TalkingQuickly/rails_gem_dependencies-tlq.git
     revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
   rbenv
-    git: git://github.com/drogus/chef-rbenv.git
-    revision: 02395a99b9f697b57a575609723c3c05f0e5a258
+    git: git://github.com/nathanielram/chef-rbenv.git
+    revision: 6067c1c63e84362c3e8e03a4cb2ea37ad71d07d2
 
 GRAPH
   apt (2.6.1)
