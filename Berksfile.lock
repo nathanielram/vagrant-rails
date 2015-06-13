@@ -8,7 +8,7 @@ DEPENDENCIES
     revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
   rbenv
     git: git://github.com/nathanielram/chef-rbenv.git
-    revision: 6067c1c63e84362c3e8e03a4cb2ea37ad71d07d2
+    revision: ea2e8621cd7ef7db11bfce3621a907b9788a4e92
 
 GRAPH
   apt (2.6.1)
