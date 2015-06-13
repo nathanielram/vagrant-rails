@@ -36,7 +36,4 @@ which will install rails
 To create a new rails app: 
 ``` bundle exec rails new myapp ```
 
-Although, I like to use:
-``` bundle exec rails new myapp --database=postgresql --skip-turbolinks ```
-
-Now you'll have a folder named "myapp" that is your rails project. Alternatively, if working on an existing project, that project could be copied into the working folder. 
+Now you'll have a folder named "myapp" that is your rails project. Alternatively, if working on an existing project, that project could be copied into the working directory. 
