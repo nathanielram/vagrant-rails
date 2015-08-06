@@ -23,10 +23,10 @@ Vagrant.configure(2) do |config|
     chef.json = 
       {
         :rbenv => {
-          :rubies => ["2.1.5"],
-          :global => "2.1.5",
+          :rubies => ["2.1.6"],
+          :global => "2.1.6",
           :gems => {
-            "2.1.5" => [
+            "2.1.6" => [
               {"name" => "bundler"}
             ]
           }

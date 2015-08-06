@@ -7,17 +7,17 @@ DEPENDENCIES
     git: git://github.com/TalkingQuickly/rails_gem_dependencies-tlq.git
     revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
   rbenv
-    git: git://github.com/nathanielram/chef-rbenv.git
-    revision: ea2e8621cd7ef7db11bfce3621a907b9788a4e92
+    git: git://github.com/chef-rbenv/chef-rbenv.git
+    revision: 7aa1def9147f94e24146d4a90c28291559e29352
 
 GRAPH
-  apt (2.6.1)
-  java (1.29.0)
+  apt (2.7.0)
+  java (1.35.0)
   postgresql (0.16.1)
     apt (>= 2.6.1)
   rails_gem_dependencies-tlq (0.0.3)
     apt (>= 0.0.0)
-  rbenv (0.7.3)
+  rbenv (0.8.0)
     java (> 1.4.0)
     ruby_build (>= 0.0.0)
   ruby_build (0.8.0)
